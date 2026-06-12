@@ -64,8 +64,8 @@ This output is used to evaluate detector acceptance, optimize mirror alignment, 
 ```
 LABM_simulation/
 ├── Detector.cc                  ← Main entry point
-├── GPSSIMULATION                ← Macro file for particle gun configuration
-├── init_vis.mac                 ← Interactive mode setup
+├── GPSSIMULATION                ← Particle gun macro: dual-beam configuration
+├── init_vis.mac                 ← Interactive mode setup and run initialization
 ├── vis.mac                      ← Visualization settings
 ├── src/
 │   ├── DetectorConstructor.cc   ← Full geometry: beam pipe, mirrors, pipes, detectors
@@ -79,7 +79,8 @@ LABM_simulation/
 │   ├── TrackerSD.cc             ← Sensitive detector: hit recording and analysis output
 │   ├── TrackerHit.cc            ← Hit data structure
 │   └── Run.cc                   ← Run-level data accumulation
-└── include/                     ← Header files for all the above
+├── include/                     ← Header files for all the above
+└── build/                       ← Compile here (excluded from version control)
 ```
 
 ---
